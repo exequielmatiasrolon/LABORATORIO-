@@ -41,9 +41,7 @@ body {
     box-shadow: 0 0 0.3em #424649;
 }
 
-#grailsLogo {
-    background-color: #feb672;
-}
+
 
 a:hover, a:active {
     outline: none; /* prevents outline in webkit on active links but retains it for tab focus */
@@ -65,10 +63,7 @@ img {
 
 /* GENERAL */
 
-#grailsLogo a {
-    display: inline-block;
-    margin: 1em;
-}
+
 
 .content {
 }
@@ -561,11 +556,13 @@ a.skip {
 }
 
 .grails-logo-container {
-    background: #7c7c7c no-repeat 50% 30%;
-    margin-bottom: 20px;
-    color: white;
-    height:300px;
-    text-align:center;
+ 
+    display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border:none;
+      
+      }
 }
 
 img.grails-logo {

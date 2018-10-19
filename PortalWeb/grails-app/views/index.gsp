@@ -2,10 +2,13 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <title>Welcome to Grails</title>
+    <title>Portal Web</title>
 </head>
+
+
 <body>
     <content tag="nav">
+
         <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Application Status <span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -24,6 +27,7 @@
                 <li><a href="#">Reloading active: ${grails.util.Environment.reloadingAgentEnabled}</a></li>
             </ul>
         </li>
+
         <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Artefacts <span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -43,15 +47,20 @@
         </li>
     </content>
 
+
+
     <div class="svg" role="presentation">
-        <div class="grails-logo-container">
-            <asset:image src="grails-cupsonly-logo-white.svg" class="grails-logo"/>
+        <div class="grails-logo-container text-center" style="background-color: black">
+            <img src="https://static.ngamers.net/monthly_2016_03/Fotos-de-portada-creativas-nuevas-3.jpg.98a13071d3f84c9989f98eb298efb6ac.jpg"  class="grails-logo" width="1500px" height="300px" no-repeat center center fixed />
         </div>
     </div>
 
-    <div id="content" role="main">
+
+
+
+    <div id="content" role="main" style="background-color: black; color: yellow">
         <section class="row colset-2-its">
-            <h1>Welcome to Grails</h1>
+            <h1>Bienvenidos a PortalWeb</h1>
 
             <p>
                 Congratulations, you have successfully started your first Grails application! At the moment
@@ -61,7 +70,7 @@
             </p>
 
             <div id="controllers" role="navigation">
-                <h2>Available Controllers:</h2>
+                <h2>Controladores</h2>
                 <ul>
                     <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
                         <li class="controller">
