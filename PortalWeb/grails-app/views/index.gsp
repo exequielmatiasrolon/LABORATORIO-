@@ -6,59 +6,21 @@
 </head>
 
 
-<body>
-    <content tag="nav">
-
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Application Status <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Environment: ${grails.util.Environment.current.name}</a></li>
-                <li><a href="#">App profile: ${grailsApplication.config.grails?.profile}</a></li>
-                <li><a href="#">App version:
-                    <g:meta name="info.app.version"/></a>
-                </li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Grails version:
-                    <g:meta name="info.app.grailsVersion"/></a>
-                </li>
-                <li><a href="#">Groovy version: ${GroovySystem.getVersion()}</a></li>
-                <li><a href="#">JVM version: ${System.getProperty('java.version')}</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Reloading active: ${grails.util.Environment.reloadingAgentEnabled}</a></li>
-            </ul>
-        </li>
-
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Artefacts <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Controllers: ${grailsApplication.controllerClasses.size()}</a></li>
-                <li><a href="#">Domains: ${grailsApplication.domainClasses.size()}</a></li>
-                <li><a href="#">Services: ${grailsApplication.serviceClasses.size()}</a></li>
-                <li><a href="#">Tag Libraries: ${grailsApplication.tagLibClasses.size()}</a></li>
-            </ul>
-        </li>
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Installed Plugins <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                <g:each var="plugin" in="${applicationContext.getBean('pluginManager').allPlugins}">
-                    <li><a href="#">${plugin.name} - ${plugin.version}</a></li>
-                </g:each>
-            </ul>
-        </li>
-    </content>
+<body >
+    
 
 
 
     <div class="svg" role="presentation">
-        <div class="grails-logo-container text-center" style="background-color: black">
-            <img src="https://static.ngamers.net/monthly_2016_03/Fotos-de-portada-creativas-nuevas-3.jpg.98a13071d3f84c9989f98eb298efb6ac.jpg"  class="grails-logo" width="1500px" height="300px" no-repeat center center fixed />
+        <div class="grails-logo-container text-center" style="background-color: #3145A8">
+            <img src="https://www.comfandi.com.co/sites/default/files/wysiwyg/comfandi_laboratorio_banner.png"  class="grails-logo" width="1500px" height="400px" no-repeat center center fixed />
         </div>
     </div>
 
 
 
 
-    <div id="content" role="main" style="background-color: black; color: yellow">
+    <div id="content" role="main" style="background-color: #323752; color: #0799F6; border-radius: 80px">
         <section class="row colset-2-its">
             <h1>Bienvenidos a PortalWeb</h1>
 

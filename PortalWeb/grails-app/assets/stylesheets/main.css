@@ -33,7 +33,7 @@ html * {
 }
 
 body {
-    background-color: #F5F5F5;
+    background-color: red;
     color: #333333;
     overflow-x: hidden; /* prevents box-shadow causing a horizontal scrollbar in firefox when viewport < 960px wide */
     -moz-box-shadow: 0 0 0.3em #424649;
@@ -569,3 +569,119 @@ img.grails-logo {
     height:340px;
     margin-top:-10px;
 }
+
+
+/* ACA VA EL MENUNUUUU*/
+
+
+#bodyy{
+    background-size: cover;
+    background-color: #778899; 
+    
+ 
+  overflow-x: hidden;
+    /* Para dejar la imagen de fondo centrada, vertical y
+
+horizontalmente */
+
+background-position: center center;
+
+/* Para que la imagen de fondo no se repita */
+
+background-repeat: no-repeat;
+
+/* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+
+background-attachment: fixed;
+
+/* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+
+background-size: cover;
+}
+
+
+
+
+#posicion{
+    top:25px;
+}
+
+#logo {
+  font-family:Audiowide;
+  font-size:25px;
+  color: white;
+  margin:10px;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+    font-weight: 700px; 
+    color: red;
+    text-shadow: 3px 3px 5px #f00,
+                 6px 6px 5px #0f0,
+                 9px 9px 5px #00f;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+
+
+#login-dp{
+    min-width: 300px;
+    min-height: 400px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:#5E5959;
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+    color: red;
+}
+
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+}
+
+
+#menukeko{
+    background-color: #0BA3FA
+}
+
+
+
+
+
+
+
