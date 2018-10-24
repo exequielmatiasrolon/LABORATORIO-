@@ -6,212 +6,78 @@ input, select, textarea {
 
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.1;
+
+
 }
 
-/* BASE LAYOUT */
+ul.menu {
+    padding: 10;
 
-html {
-    background-color: #ddd;
-    background-image: -moz-linear-gradient(center top, #aaa, #ddd);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #aaa), color-stop(1, #ddd));
-    background-image: linear-gradient(top, #aaa, #ddd);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr = '#aaaaaa', EndColorStr = '#dddddd');
-    background-repeat: no-repeat;
-    height: 100%;
-    /* change the box model to exclude the padding from the calculation of 100% height (IE8+) */
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
 
-html.no-cssgradients {
-    background-color: #aaa;
-}
 
-html * {
-    margin: 0;
-}
 
-body {
-    background-color: red;
-    color: #333333;
-    overflow-x: hidden; /* prevents box-shadow causing a horizontal scrollbar in firefox when viewport < 960px wide */
-    -moz-box-shadow: 0 0 0.3em #424649;
-    -webkit-box-shadow: 0 0 0.3em #424649;
-    box-shadow: 0 0 0.3em #424649;
 }
 
 
-
-a:hover, a:active {
-    outline: none; /* prevents outline in webkit on active links but retains it for tab focus */
-}
-
-h1, h2, h3 {
-    font-weight: normal;
-    font-size: 1.25em;
-    margin: 0.8em 0 0.3em 0;
-}
-
-ul {
-    padding: 0;
-}
-
-img {
-    border: 0;
-}
-
-/* GENERAL */
-
-
-
-.content {
-}
 
 .content h1 {
     border-bottom: 1px solid #CCCCCC;
     margin: 0.8em 1em 0.3em;
-    padding: 0 0.25em;
+    padding: 0 0.95em;
+    font-weight: 700px; 
+    color: black;
+    text-shadow: 3px 3px 5px #f00,
+                 6px 6px 5px #0f0,
+                 9px 9px 5px #00f;
+
 }
 
 .scaffold-list h1 {
-    border: none;
+    border: 3;
+
 }
 
 
-.spinner {
-    background: url(../images/spinner.gif) 50% 50% no-repeat transparent;
-    height: 16px;
-    width: 16px;
-    padding: 0.5em;
-    position: absolute;
-    right: 0;
-    top: 0;
-    text-indent: -9999px;
-}
-
-/* NAVIGATION MENU */
 
 
 
 /* CREATE/EDIT FORMS AND SHOW PAGES */
 
-fieldset,
-.property-list {
-    margin: 0.6em 1.25em 0 1.25em;
-    padding: 0.3em 1.8em 1.25em;
-    position: relative;
-    zoom: 1;
-    border: none;
-}
 
-.property-list .fieldcontain {
-    list-style: none;
-    overflow: hidden;
-    zoom: 1;
-}
-
-.fieldcontain {
-    margin-top: 1em;
-}
 
 .fieldcontain label,
 .fieldcontain .property-label {
-    color: #666666;
+    color: black;
     text-align: right;
     width: 25%;
+   font: oblique bold 120% cursive;
+
+    
+
 }
 
-.fieldcontain .property-label {
-    float: left;
-}
 
-.fieldcontain .property-value {
-    display: block;
-    margin-left: 27%;
-}
+
+
 
 label {
     cursor: pointer;
     display: inline-block;
-    margin: 0 0.25em 0 0;
+    margin: 0 2.85em 0 0;
+    color: black;
+    padding: 5px;
+    
+    
 }
 
-input, select, textarea {
-    background-color: #fcfcfc;
-    border: 1px solid #cccccc;
-    font-size: 1em;
-    padding: 0.2em 0.4em;
-}
 
 select {
     padding: 0.2em 0.2em 0.2em 0;
+    border-radius: 5px
 }
 
-select[multiple] {
-    vertical-align: top;
-}
 
-textarea {
-    width: 250px;
-    height: 150px;
-    overflow: auto; /* IE always renders vertical scrollbar without this */
-    vertical-align: top;
-}
 
-input[type=checkbox], input[type=radio] {
-    background-color: transparent;
-    border: 0;
-    padding: 0;
-}
-
-input:focus, select:focus, textarea:focus {
-    background-color: #ffffff;
-    border: 1px solid #eeeeee;
-    outline: 0;
-    -moz-box-shadow: 0 0 0.5em #ffffff;
-    -webkit-box-shadow: 0 0 0.5em #ffffff;
-    box-shadow: 0 0 0.5em #ffffff;
-}
-
-.required-indicator {
-    color: #cc0000;
-    display: inline-block;
-    font-weight: bold;
-    margin-left: 0.3em;
-    position: relative;
-    top: 0.1em;
-}
-
-ul.one-to-many {
-    display: inline-block;
-    list-style-position: inside;
-    vertical-align: top;
-}
-
-ul.one-to-many li.add {
-    list-style-type: none;
-}
-
-/* EMBEDDED PROPERTIES */
-
-fieldset.embedded {
-    background-color: transparent;
-    border: 1px solid #CCCCCC;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-fieldset.embedded legend {
-    margin: 0 1em;
-}
-
-/* MESSAGES AND ERRORS */
 
 .errors,
 .message {
@@ -274,6 +140,7 @@ fieldset.embedded legend {
 input:invalid, select:invalid, textarea:invalid {
     background: #fff3f3;
     border-color: #ffaaaa;
+
     color: #cc0000;
 }
 
@@ -286,18 +153,21 @@ input:invalid:focus, select:invalid:focus, textarea:invalid:focus {
 /* TABLES */
 
 table {
-    border-top: 1px solid #DFDFDF;
-    border-collapse: collapse;
+    border-top: 10px solid #444ED3;    
     width: 100%;
     margin-bottom: 1em;
+    font: oblique bold 110% cursive;
+
+   
+        border: 20px double transparent
+
 }
 
-tr {
-    border: 0;
-}
+
 
 tr>td:first-child, tr>th:first-child {
     padding-left: 1.25em;
+
 }
 
 tr>td:last-child, tr>th:last-child {
@@ -309,18 +179,19 @@ td, th {
     padding: 0.5em 0.6em;
     text-align: left;
     vertical-align: top;
+    color: black;
+    background-color: #f5f5f5
+
 }
 
 th {
-    background-color: #efefef;
-    background-image: -moz-linear-gradient(top, #ffffff, #eaeaea);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #eaeaea));
+    background-color: #13CEFD;
+    
+
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr = '#ffffff', EndColorStr = '#eaeaea');
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#eaeaea')";
-    color: #666666;
-    font-weight: bold;
-    line-height: 1.7em;
-    padding: 0.2em 0.6em;
+    
+  
 }
 
 thead th {
@@ -333,11 +204,12 @@ th a {
 }
 
 th a:link, th a:visited {
-    color: #666666;
+    color: black;
+
 }
 
 th a:hover, th a:focus {
-    color: #333333;
+    color: red;
 }
 
 th.sortable a {
@@ -377,6 +249,7 @@ th:hover, tr:hover {
     -webkit-box-shadow: 0 0 3px 1px #AAAAAA;
     box-shadow: 0 0 3px 1px #AAAAAA;
     background-color: #EFEFEF;
+
 }
 
 .pagination a,
@@ -477,49 +350,7 @@ a.skip {
     left: -9999px;
 }
 
-.grails-logo-container {
- 
-    display: block;
-      margin-left: auto;
-      margin-right: auto;
-      border:none;
-      
-      }
-}
 
-img.grails-logo {
-    height:340px;
-    margin-top:-10px;
-}
-
-
-/* ACA VA EL MENUNUUUU*/
-
-
-#bodyy{
-    background-size: cover;
-    background-color: #778899; 
-    
- 
-  overflow-x: hidden;
-    /* Para dejar la imagen de fondo centrada, vertical y
-
-horizontalmente */
-
-background-position: center center;
-
-/* Para que la imagen de fondo no se repita */
-
-background-repeat: no-repeat;
-
-/* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
-
-background-attachment: fixed;
-
-/* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
-
-background-size: cover;
-}
 
 
 
@@ -533,11 +364,7 @@ background-size: cover;
   font-size:25px;
   color: white;
   margin:10px;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+ 
     font-weight: 700px; 
     color: red;
     text-shadow: 3px 3px 5px #f00,
@@ -599,8 +426,12 @@ background-size: cover;
 }
 
 
+
+
+
 #menukeko{
-    background-color: #0BA3FA
+    background-color: #0BA3FA;
+
 }
 
 
@@ -617,6 +448,7 @@ background-size: cover;
 
 .section-content{
   text-align: center; 
+
 
 }
 #contact{
@@ -661,110 +493,90 @@ textarea.form-control {
 
 .submit{
   font-size: 1.1em;
-  float: right;
+  float: center;
   width: 150px;
-  background-color: transparent;
+  background-color: red;
   color: #fff;
+}
+
+
+#list-paciente{
+
+border: 7px double #000000;
+border-radius: 35px
 
 }
 
 
+/* ACA COMIENZA MENU NAVEGACION PACIENTES/CREAR/LISTAR*/
 
-
-/* DEL HTML REGISTRO */ 
-
-
-h1.title { 
-    font-size: 50px;
+div.nav{
     
-    font-weight: 700px; 
-    color: black;
-    text-shadow: 3px 3px 5px #f00,
-                 6px 6px 5px #0f0,
-                 9px 9px 5px #00f;    
-                 
-
 }
 
-hr{
-    width: 80%;
-    color: black;
-    border-color: red;
+div.nav ul {
 
+    padding: .7em;
+    float: left;
+    list-style: none;
+    background: #444;
+    background: rgba(0,0,0,.2);
+    border-radius: .9em;    
+    box-shadow: 0 1px 0 rgba(255,255,255,.2), 0 2px 1px rgba(0,0,0,.8) inset; 
+    width: 100%
+    
+
+     
 }
 
-.form-group{
-    margin-bottom: 20px;
-
-
-
+div.nav ul li{
+    float: left;
 }
 
-
-
-
-
-label{
-    margin-bottom: 15px;
-    color: #D62929
-
-}
-
-input,
-input::-webkit-input-placeholder {
-    font-size: 11px;
-    padding-top: 50px;
-
-}
-
-.main-login{
-    background-color: #fff;
-    /* shadows and rounded borders */
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-
-
-
-}
-
-
-.main-center{
-    margin-top: 50px;
-    margin: 0 auto;
-    max-width: 500px;
-    padding: 30px 40px;
-    background-image: url(fondo.jpg);
-
-   
+div.nav a{
+    float:left;
+    padding: .8em 1.5em;
+    text-decoration: none;
+    color: #555;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    font: bold 1.1em/1 'trebuchet MS', Arial, Helvetica;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     border-width: 5px;
-    border-color: #D62929;
-  
-    border-radius: 50px;
-
-
-
-}
-
-
-
-input:hover{
-    background-color: #FBBDBD;
-    color: red;
-}
-
-
-.login-button{
-    margin-top: 5px;
+    border-style: solid;
+    border-color: #fff #ccc #999 #eee;
+    background: #c1c1c1;
+    background: linear-gradient(#f5f5f5, #c1c1c1);
+   
 
 }
-
-.login-register{
-    font-size: 11px;
-    text-align: center;
-
+div.nav a:hover, div.nav a:focus{
+    outline: 0;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0,0,0,.2);
+    background: #fac754;
+    background: linear-gradient(#fac754, #f8ac00);
 }
+
+div.nav ul li{
+    padding: .3em;
+  display: block;
+  text-decoration: none;
+  color: #333;
+  background: #F4F4F4;
+  border-top: 1px solid #7C7C7C;
+  border-right: 1px solid #7C7C7C;
+  border-bottom: 1px solid #9C9C9C;
+}
+div.nav ul li:hover{
+ background-color: yellow
+}
+
+/* ACA TERMINA MENU NAVEGACION PACIENTES/CREAR/LISTAR*/
+
+
+
+
+
+
 

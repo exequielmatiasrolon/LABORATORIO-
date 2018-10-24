@@ -13,6 +13,102 @@
         <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
+        <style type="text/css">
+            
+h1.title { 
+    font-size: 50px;
+    
+    font-weight: 700px; 
+    color: black;
+    text-shadow: 3px 3px 5px #f00,
+                 6px 6px 5px #0f0,
+                 9px 9px 5px #00f;    
+                 
+
+}
+
+hr{
+    width: 80%;
+    color: black;
+    border-color: red;
+
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+
+
+
+
+label{
+    margin-bottom: 15px;
+    color: #D62929
+
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 11px;
+    padding-top: 50px;
+
+}
+
+.main-login{
+    background-color: #fff;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+
+
+
+}
+
+
+.main-center{
+    
+    margin-top: 50px;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 30px 40px;
+    
+
+   
+    border-width: 5px;
+    border-color: #D62929;
+  
+    border-radius: 50px;
+
+
+
+}
+
+
+
+input:hover{
+    background-color: #5164F4;
+    color: black;
+}
+
+
+.login-button{
+    margin-top: 5px;
+
+}
+
+.login-register{
+    font-size: 11px;
+    text-align: center;
+
+}
+
+        </style>
+
 </head>
 
 

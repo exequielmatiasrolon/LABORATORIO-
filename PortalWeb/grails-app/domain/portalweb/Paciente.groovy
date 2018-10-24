@@ -1,6 +1,10 @@
 package portalweb
 
-class Paciente {
+class Paciente extends Persona {
+
+
+	static hasMany=[obraSocial: ObraSocial,estudio:Estudio]
+
 
     static constraints = {
     }
