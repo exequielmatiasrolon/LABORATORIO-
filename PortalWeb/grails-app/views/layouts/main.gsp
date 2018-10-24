@@ -24,7 +24,7 @@
 
 
 
-<body style=" background-image: url(https://i0.wp.com/estudidentalbarcelona.com/wp-content/uploads/2018/06/historia-clinica-odontologia.jpg)">
+<body style=" background-color: #6CB1DC">
 
 
 
@@ -56,8 +56,8 @@
                      <ul class="nav navbar-nav">
                             <li class="active" ><a href="inicio.html">Inicio</a></li>                           
                             <li ><a href="#">Quienes Somos</a></li>
-                            <LI ><a href="#">Nuestros Laboratorios</a></LI>
-                            <li ><a href="#" class="dropdown-toggle" data-toggle="dropdown">Contactanos</a>  </li>
+                            <li ><g:link controller="contacto" action="showNuestrosLaboratorios">Nuestros Laboratorios</g:link></li>
+                            <li ><g:link controller="contacto" action="showContacto">Contactanos </g:link> </li>
                                 
                           
                     </ul>
@@ -92,7 +92,7 @@
                                                      </form>
                                                 </div>
                                                 <div class="bottom text-center" style="color: red;">
-                                                    Nuevo aquí? <a href="registrar.html" style="color: red;"><b>Unete a Nosotros</b></a>
+                                                    Nuevo aquí? <g:link controller="contacto" action="showRegistro">Registrate AQUI</g:link></a>
                                                 </div>
                                          </div>
                                     </li>
@@ -120,12 +120,7 @@
 
 
     <br><br><br><br><hr>
-    <div class="footer text-center" role="contentinfo" style="font-size:15px; margin-bottom: 1px ;background-color: black;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 40px;
-  color: white;"><MARQUEE> Todos los derechos Reservados @  Contacto +543834545199 San Fernando del Valle de Catamarca </MARQUEE></div>
+    <div class="footer text-center" role="contentinfo" ><MARQUEE> Todos los derechos Reservados @  Contacto +543834545199 San Fernando del Valle de Catamarca </MARQUEE></div>
 
    
    
