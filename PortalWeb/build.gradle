@@ -58,7 +58,6 @@ dependencies {
     testRuntime "org.seleniumhq.selenium:selenium-chrome-driver:2.47.1"
     testRuntime "org.seleniumhq.selenium:selenium-htmlunit-driver:2.47.1"
     testRuntime "net.sourceforge.htmlunit:htmlunit:2.18"
-    runtime 'org.postgresql:postgresql:9.3-1101-jdbc41'
 }
 
 bootRun {
