@@ -53,10 +53,11 @@
                  <!-- Recoge los enlaces de navegación, formularios y otro contenido para alternar -->
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                      <ul class="nav navbar-nav">
-                            <li class="active" ><a href="inicio.html">Inicio</a></li>                           
+                            <li class="active" ><g:link controller="contacto" action="showIndex">Inicio</g:link></li>                           
                             <li ><a href="#">Quienes Somos</a></li>
                             <li ><g:link controller="contacto" action="showNuestrosLaboratorios">Nuestros Laboratorios</g:link></li>
-                            <li ><g:link controller="contacto" action="showContacto">Contactanos </g:link> </li>
+                            <li ><g:link controller="contacto" action="showContacto">Contactanos</g:link></li>
+                            
                                 
                           
                     </ul>

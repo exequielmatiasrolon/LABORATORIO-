@@ -29,6 +29,12 @@ class ContactoController {
 
     }
 
+    def showIndex(){
+
+        render(view: "../index")
+
+    }
+
 
    
 

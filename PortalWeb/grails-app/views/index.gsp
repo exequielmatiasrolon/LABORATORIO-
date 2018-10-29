@@ -22,7 +22,7 @@
 
     <div id="content" role="main" style="background-color: #323752; color: #0799F6; border-radius: 80px">
         <section class="row colset-2-its">
-            <h1>Bienvenidos a PortalWeb</h1>
+            <h1>Bienvenidos a Trabajo Practico N°5<h1>
 
             <p>
                 Congratulations, you have successfully started your first Grails application! At the moment
